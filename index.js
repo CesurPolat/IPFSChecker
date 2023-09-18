@@ -10,7 +10,7 @@ var timeout = 5000;
 var countdown = new Spinner("Finishing in ? seconds...  ", [
   "/",
   "-",
-  "'",
+  "\\",
   "|",
 ]);
 
