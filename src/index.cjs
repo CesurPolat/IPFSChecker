@@ -1,5 +1,5 @@
 "use strict";
-import axios from 'axios';
+const axios = require("axios");
 
 const gateways = [
   "https://ipfs.io/ipfs/",
@@ -87,7 +87,7 @@ const gateways = [
 
 const timeout = 5000;
 
-export function getGateway() {
+function getGateway() {
   return new Promise((resolve, reject) => {
     gateways.forEach((element, i) => {
       axios
@@ -106,7 +106,7 @@ export function getGateway() {
   });
 }
 
-export function getGateways() {
+function getGateways() {
   return new Promise((resolve, reject) => {
     let tempGateways = [];
     gateways.forEach(async (element, i) => {
@@ -129,3 +129,4 @@ export function getGateways() {
   });
 }
 
+module.exports = { getGateway, getGateways };

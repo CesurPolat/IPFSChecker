@@ -10,10 +10,11 @@
   "author": "CesurPolat",
   "license": "MIT",
   "browser": "src/browser.js",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "src/index.mjs",
-      "require": "src/index.js"
+      "import": "src/index.js",
+      "require": "src/index.cjs"
     }
   },
   "dependencies": {
