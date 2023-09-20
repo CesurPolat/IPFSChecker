@@ -1,5 +1,5 @@
 {
-  "name": "ipfsgatewaychecker",
+  "name": "ipfschecker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,17 @@
   },
   "author": "CesurPolat",
   "license": "MIT",
+  "browser": "src/browser.js",
+  "exports": {
+    "import": {
+      "path": "src/index.mjs",
+      "type": "module"
+    },
+    "require": {
+      "path": "src/index.js",
+      "type": "commonjs"
+    }
+  },
   "dependencies": {
     "axios": "^1.5.0",
     "clear": "^0.1.0",
