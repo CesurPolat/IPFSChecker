@@ -1,6 +1,6 @@
 {
   "name": "ipfschecker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -11,7 +11,7 @@
   "license": "MIT",
   "browser": "src/browser.js",
   "exports": {
-    ".":{
+    ".": {
       "import": "src/index.mjs",
       "require": "src/index.js"
     }
