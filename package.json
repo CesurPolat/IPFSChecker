@@ -11,13 +11,9 @@
   "license": "MIT",
   "browser": "src/browser.js",
   "exports": {
-    "import": {
-      "path": "src/index.mjs",
-      "type": "module"
-    },
-    "require": {
-      "path": "src/index.js",
-      "type": "commonjs"
+    ".":{
+      "import": "src/index.mjs",
+      "require": "src/index.js"
     }
   },
   "dependencies": {
